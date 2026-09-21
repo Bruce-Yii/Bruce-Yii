@@ -5,7 +5,7 @@
 I fix agent systems upstream: CLI reliability, RAG fidelity, eval correctness, OAuth edge cases. Small, verifiable patches — merged, not claimed.
 
 - Focus: agent CLIs & gateways (OpenClaw), RAG pipelines (Dify), eval harnesses (ModelScope EvalScope), console & auth flows (QwenPaw, OpenCodex), install reliability (dsh-market)
-- Method: reproduce first, minimal diff, prove against current `main`, no fabricated roles/counts
+- Method: reproduce first, keep the diff minimal, verify against current `main`
 - Profile: [github.com/Bruce-Yii](https://github.com/Bruce-Yii)
 
 ## Upstream contributions (merged, verifiable)
@@ -22,8 +22,6 @@ I fix agent systems upstream: CLI reliability, RAG fidelity, eval correctness, O
 | OpenCodex · auth robustness | [lidge-jun/opencodex#1418](https://github.com/lidge-jun/opencodex/pull/1418) | Guard `expires_in` parsing against NaN across token responses |
 
 More merged work (same author, live on GitHub): [search `author:Bruce-Yii is:pr is:merged`](https://github.com/search?q=author%3ABruce-Yii+is%3Apr+is%3Amerged&type=pullrequests) — e.g. Dify #42212, OpenClaw #141569 / #140531, EvalScope #1720, dsh-market #117 / #115.
-
-Suggested pins (upstream, set in profile UI): `openclaw/openclaw`, `langgenius/dify`, `agentscope-ai/QwenPaw`, `modelscope/evalscope`, `lidge-jun/opencodex`, `dsh-market/dsh-market`.
 
 ## Focus
 
@@ -52,8 +50,3 @@ Suggested pins (upstream, set in profile UI): `openclaw/openclaw`, `langgenius/d
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Bruce-Yii/Bruce-Yii/main/dist/github-snake-dark.svg" />
   <img alt="Contribution grid snake" src="https://raw.githubusercontent.com/Bruce-Yii/Bruce-Yii/main/dist/github-snake.svg" />
 </picture>
-
-<!--
-Profile repo: Bruce-Yii/Bruce-Yii (public). No fabricated titles, employers,
-talks, stars, or maintainership. All links verified live 2026-09-22.
--->
