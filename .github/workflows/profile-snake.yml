@@ -19,9 +19,9 @@ jobs:
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
-      - name: Commit only when changed
+      - name: Commit only when changed (tracked + untracked)
         run: |
-          if git diff --quiet -- dist/; then
+          if [ -z "$(git status --porcelain -- dist/)" ]; then
             echo "no change, skipping commit"
             exit 0
           fi
