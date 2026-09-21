@@ -35,13 +35,13 @@ Suggested pins (upstream, set in profile UI): `openclaw/openclaw`, `langgenius/d
 ## Recent OSS activity
 
 <!-- OSS-ACTIVITY:START -->
-- 2026-09-17 — `modelscope/evalscope#1729` merged — real multi-image MMMU dataset mode
-- 2026-09-12 — `langgenius/dify#42221` merged — preserve literal NA in annotation CSV imports
-- 2026-09-12 — `langgenius/dify#42212` merged — ignore blank keyword rows in moderation limit
-- 2026-09-20 — `langgenius/dify#42171` merged — preserve Notion mention and equation text
-- 2026-09-11 — `openclaw/openclaw#145220` merged — doctor --fix gateway repair
-- 2026-09-11 — `openclaw/openclaw#144579` merged — transcript output contract
-- 2026-09-07 — `agentscope-ai/QwenPaw#7593` merged — session direct path input
+- 2026-09-20 — `langgenius/dify#42171` merged — fix(rag): preserve Notion mention and equation text
+- 2026-09-17 — `modelscope/evalscope#1729` merged — feat(perf): add real multi-image MMMU dataset mode
+- 2026-09-12 — `langgenius/dify#42221` merged — fix(api): preserve literal NA in annotation CSV imports
+- 2026-09-12 — `langgenius/dify#42212` merged — fix: ignore blank keyword rows in moderation limit
+- 2026-09-11 — `openclaw/openclaw#145220` merged — fix(doctor): doctor --fix leaves systemd-user gateway stopped after repair
+- 2026-09-11 — `modelscope/evalscope#1720` merged — fix(utils): narrow check_import exception handling
+- 2026-09-11 — `openclaw/openclaw#144579` merged — fix(cli): keep transcript output free of startup notes
 <!-- OSS-ACTIVITY:END -->
 
 > Auto-updated weekly from the GitHub API. Handwritten sections are preserved via markers; the updater never erases content on API failure and never commits when there is no change.
