@@ -1,0 +1,33 @@
+name: profile-activity
+
+on:
+  schedule:
+    - cron: "0 1 * * 1" # weekly, Monday 01:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write # minimal: only needed to update this profile repo's README/dist
+
+jobs:
+  activity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Refresh OSS activity block (marker-preserving, fail-safe)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update-activity.py
+      - name: Commit only when changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "no change, skipping commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore(profile): refresh OSS activity block"
+          git push

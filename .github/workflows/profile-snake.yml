@@ -1,0 +1,32 @@
+name: profile-snake
+
+on:
+  schedule:
+    - cron: "0 2 * * 1" # weekly, after activity job
+  workflow_dispatch:
+
+permissions:
+  contents: write # minimal: only to write dist/*.svg in this profile repo
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: Bruce-Yii
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+      - name: Commit only when changed
+        run: |
+          if git diff --quiet -- dist/; then
+            echo "no change, skipping commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/
+          git commit -m "chore(profile): refresh contribution snake"
+          git push
