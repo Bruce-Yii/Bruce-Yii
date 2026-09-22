@@ -1,0 +1,22 @@
+<svg
+  width="854"
+  height="140"
+  viewBox="0 0 854 140"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Vendored static header for Bruce-Yii/Bruce-Yii (run_oss_github_profile_showcase_20260922_05).
+       Generated from kyechan99/capsule-render (MIT) with:
+       ?type=wave&color=0:0f2027,100:2c5364&height=140&section=header
+       Vendored so profile rendering never depends on the best-effort public endpoint. -->
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 854 140"
+  >
+    <defs>
+        <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#0f2027"/><stop offset="100%" stop-color="#2c5364"/>
+        </linearGradient>
+      </defs>
+    <path fill="url(#linear)"  fill-opacity="1" d="m 0 0 T 0 90 Q 110 -35 220 75 T 440 80 T 660 70 T 880 95 T 880 0 z"></path>
+  </svg>
+</svg>
