@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/Bruce-Yii/Bruce-Yii/main/dist/header.svg" alt="" />
+
 <div align="center">
 
 # 👋 Hi, I'm Bruce Yi
@@ -58,6 +60,10 @@ More merged work (same author, live on GitHub): [search `author:Bruce-Yii is:pr 
 > Auto-updated weekly from the GitHub API. Handwritten sections are preserved via markers; the updater never erases content on API failure and never commits when there is no change.
 
 ## Contributions
+
+<p align="center">
+  <img alt="GitHub streak stats" src="https://raw.githubusercontent.com/Bruce-Yii/Bruce-Yii/main/dist/streak.svg" width="495" />
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Bruce-Yii/Bruce-Yii/main/dist/github-snake-dark.svg" />
