@@ -21,29 +21,34 @@ I fix agent systems upstream: CLI reliability, RAG fidelity, eval correctness, O
 - Method: reproduce first, keep the diff minimal, verify against current `main`
 - Profile: [github.com/Bruce-Yii](https://github.com/Bruce-Yii)
 
-## Upstream contributions (merged, verifiable)
+## Selected upstream work
 
-Every entry links to a merged upstream PR — no claims without a link.
+25 merged PRs across 10 upstream repositories — [full list](https://github.com/search?q=author%3ABruce-Yii+is%3Apr+is%3Amerged&type=pullrequests).
 
-| Area | Merged PR | What changed |
-|------|-----------|--------------|
-| OpenClaw · gateway reliability | [openclaw/openclaw#145220](https://github.com/openclaw/openclaw/pull/145220) | `doctor --fix` no longer leaves the systemd-user gateway stopped after repair |
-| EvalScope · eval correctness | [modelscope/evalscope#1729](https://github.com/modelscope/evalscope/pull/1729) | Real multi-image MMMU dataset mode (perf) |
-| Dify · data fidelity | [langgenius/dify#42221](https://github.com/langgenius/dify/pull/42221) | Preserve literal `NA` in annotation CSV imports |
-| Dify · RAG fidelity | [langgenius/dify#42171](https://github.com/langgenius/dify/pull/42171) | Preserve Notion mention and equation text in RAG ingestion |
-| OpenClaw · CLI output contract | [openclaw/openclaw#144579](https://github.com/openclaw/openclaw/pull/144579) | Keep transcript output free of startup notes |
-| QwenPaw · console UX | [agentscope-ai/QwenPaw#7593](https://github.com/agentscope-ai/QwenPaw/pull/7593) | Restore session direct-path input alongside picker |
-| dsh-market · install reliability | [dsh-market/dsh-market#119](https://github.com/dsh-market/dsh-market/pull/119) | Reclaim orphaned pnpm store staging dirs after failed runs |
-| OpenCodex · auth robustness | [lidge-jun/opencodex#1418](https://github.com/lidge-jun/opencodex/pull/1418) | Guard `expires_in` parsing against NaN across token responses |
+**[OpenClaw](https://github.com/openclaw/openclaw) · 4 merged PRs**
+[#145220](https://github.com/openclaw/openclaw/pull/145220) · [#144579](https://github.com/openclaw/openclaw/pull/144579) · [#141569](https://github.com/openclaw/openclaw/pull/141569) · [#140531](https://github.com/openclaw/openclaw/pull/140531)
+gateway repair · CLI output · local inference · setup guard
 
-More merged work (same author, live on GitHub): [search `author:Bruce-Yii is:pr is:merged`](https://github.com/search?q=author%3ABruce-Yii+is%3Apr+is%3Amerged&type=pullrequests) — e.g. Dify #42212, OpenClaw #141569 / #140531, EvalScope #1720, dsh-market #117 / #115.
+**[Dify](https://github.com/langgenius/dify) · 3 merged PRs**
+[#42221](https://github.com/langgenius/dify/pull/42221) · [#42212](https://github.com/langgenius/dify/pull/42212) · [#42171](https://github.com/langgenius/dify/pull/42171)
+data fidelity · moderation · RAG ingestion
 
-## Focus
+**[EvalScope](https://github.com/modelscope/evalscope) · 2 merged PRs**
+[#1729](https://github.com/modelscope/evalscope/pull/1729) · [#1720](https://github.com/modelscope/evalscope/pull/1720)
+eval correctness · import guard
 
-- Agent reliability: startup/transcript contracts, gateway repair paths, session handling
-- RAG & data: CSV/Notion ingestion fidelity, annotation correctness
-- Eval: dataset modes that reflect real multimodal inputs
-- Auth & install: token-expiry guards, retry/timeout semantics, store recovery
+**[QwenPaw](https://github.com/agentscope-ai/QwenPaw) · 1 merged PR**
+[#7593](https://github.com/agentscope-ai/QwenPaw/pull/7593)
+console UX
+
+### More merged contributions
+
+[dsh-market](https://github.com/dsh-market/dsh-market) ×3 — [#119](https://github.com/dsh-market/dsh-market/pull/119) · [#117](https://github.com/dsh-market/dsh-market/pull/117) · [#115](https://github.com/dsh-market/dsh-market/pull/115)
+[modeldock](https://github.com/architectds/modeldock) ×5 — [#11](https://github.com/architectds/modeldock/pull/11) · [#9](https://github.com/architectds/modeldock/pull/9) · [#8](https://github.com/architectds/modeldock/pull/8) · [#7](https://github.com/architectds/modeldock/pull/7) · [#5](https://github.com/architectds/modeldock/pull/5)
+[codex-router](https://github.com/duolahypercho/codex-router) ×3 — [#154](https://github.com/duolahypercho/codex-router/pull/154) · [#151](https://github.com/duolahypercho/codex-router/pull/151) · [#132](https://github.com/duolahypercho/codex-router/pull/132)
+[opencodex](https://github.com/lidge-jun/opencodex) ×2 — [#1418](https://github.com/lidge-jun/opencodex/pull/1418) · [#1369](https://github.com/lidge-jun/opencodex/pull/1369)
+[dsh-plugins](https://github.com/Ephemeral-AI-Lab/dsh-plugins) ×1 — [#5](https://github.com/Ephemeral-AI-Lab/dsh-plugins/pull/5)
+[boss-zhipin-scraper](https://github.com/eatmoreduck/boss-zhipin-scraper) ×1 (fork) — [#54](https://github.com/eatmoreduck/boss-zhipin-scraper/pull/54)
 
 ## Recent OSS activity
 
@@ -53,11 +58,9 @@ More merged work (same author, live on GitHub): [search `author:Bruce-Yii is:pr 
 - 2026-09-12 — `langgenius/dify#42221` merged — fix(api): preserve literal NA in annotation CSV imports
 - 2026-09-12 — `langgenius/dify#42212` merged — fix: ignore blank keyword rows in moderation limit
 - 2026-09-11 — `openclaw/openclaw#145220` merged — fix(doctor): doctor --fix leaves systemd-user gateway stopped after repair
-- 2026-09-11 — `modelscope/evalscope#1720` merged — fix(utils): narrow check_import exception handling
-- 2026-09-11 — `openclaw/openclaw#144579` merged — fix(cli): keep transcript output free of startup notes
 <!-- OSS-ACTIVITY:END -->
 
-> Auto-updated weekly from the GitHub API. Handwritten sections are preserved via markers; the updater never erases content on API failure and never commits when there is no change.
+> Auto-updated weekly; handwritten sections preserved via markers.
 
 ## Contributions
 
