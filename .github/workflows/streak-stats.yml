@@ -1,0 +1,34 @@
+name: streak-stats
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # daily, 03:00 UTC
+  push:
+    paths:
+      - ".github/workflows/streak-stats.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write # minimal: only to write dist/streak.svg in this profile repo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate streak stats (public contributions only, no PAT needed)
+        uses: DenverCoder1/github-readme-streak-stats@v1
+        with:
+          options: user=${{ github.repository_owner }}&theme=default&hide_border=true&disable_animations=true&timezone=Asia/Shanghai&card_width=495
+          path: dist/streak.svg
+      - name: Commit only when changed
+        run: |
+          if [ -z "$(git status --porcelain -- dist/streak.svg)" ]; then
+            echo "no change, skipping commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/streak.svg
+          git commit -m "chore(profile): refresh streak stats"
+          git push
