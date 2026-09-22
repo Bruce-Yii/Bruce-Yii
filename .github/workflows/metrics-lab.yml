@@ -1,0 +1,72 @@
+name: metrics-lab
+
+# Phase-1 experiment only: manual trigger, candidate SVGs to metrics-lab/,
+# never touches README. Refuses cleanly when METRICS_TOKEN is absent.
+
+on:
+  workflow_dispatch:
+    inputs:
+      candidate:
+        description: "Candidate to render (a, b, c, all)"
+        required: false
+        default: "all"
+
+permissions:
+  contents: write # minimal: the metrics action commits candidate SVGs to metrics-lab/
+
+jobs:
+  lab:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check METRICS_TOKEN presence (name only, value never read)
+        id: gate
+        run: |
+          if [ -z "${{ secrets.METRICS_TOKEN }}" ]; then
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "METRICS_TOKEN is not configured; skipping candidate renders."
+          else
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Candidate A — notable PR contributions
+        if: steps.gate.outputs.available == 'true' && (inputs.candidate == 'all' || inputs.candidate == 'a')
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-lab/notable.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          user: Bruce-Yii
+          config_timezone: Asia/Shanghai
+          plugin_notable: yes
+          plugin_notable_from: all
+          plugin_notable_types: pull_request
+      - name: Candidate B — notable + recent high-signal activity
+        if: steps.gate.outputs.available == 'true' && (inputs.candidate == 'all' || inputs.candidate == 'b')
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-lab/notable-activity.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          user: Bruce-Yii
+          config_timezone: Asia/Shanghai
+          plugin_notable: yes
+          plugin_notable_from: all
+          plugin_notable_types: pull_request
+          plugin_activity: yes
+          plugin_activity_limit: 7
+          plugin_activity_days: 30
+          plugin_activity_filter: pr, review, issue, release
+      - name: Candidate C — notable + full-year isometric calendar
+        if: steps.gate.outputs.available == 'true' && (inputs.candidate == 'all' || inputs.candidate == 'c')
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-lab/notable-isocalendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          user: Bruce-Yii
+          config_timezone: Asia/Shanghai
+          plugin_notable: yes
+          plugin_notable_from: all
+          plugin_notable_types: pull_request
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
