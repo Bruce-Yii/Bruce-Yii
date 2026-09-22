@@ -1,3 +1,5 @@
+<div align="center">
+
 # 👋 Hi, I'm Bruce Yi
 
 **AI Product · Agent Systems · Open Source**
@@ -10,6 +12,8 @@ I fix agent systems upstream: CLI reliability, RAG fidelity, eval correctness, O
   <img alt="AI Product" src="https://img.shields.io/badge/AI_Product-agent_systems-8A2BE2" />
   <img alt="Agent Systems" src="https://img.shields.io/badge/Agent_Systems-reliability-green" />
 </p>
+
+</div>
 
 - Focus: agent CLIs & gateways (OpenClaw), RAG pipelines (Dify), eval harnesses (ModelScope EvalScope), console & auth flows (QwenPaw, OpenCodex), install reliability (dsh-market)
 - Method: reproduce first, keep the diff minimal, verify against current `main`
