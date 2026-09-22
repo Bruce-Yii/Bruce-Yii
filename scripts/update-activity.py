@@ -18,14 +18,13 @@ END = "<!-- OSS-ACTIVITY:END -->"
 
 # Curated fallback: verified merged 2026-09-22 via GitHub search
 # author:Bruce-Yii is:pr is:merged. Dates are merge (closed_at) dates.
+# Kept at 5 most recent to match the compressed freshness block in README.
 FALLBACK_LINES = [
+    "- 2026-09-20 — `langgenius/dify#42171` merged — preserve Notion mention and equation text",
     "- 2026-09-17 — `modelscope/evalscope#1729` merged — real multi-image MMMU dataset mode",
     "- 2026-09-12 — `langgenius/dify#42221` merged — preserve literal NA in annotation CSV imports",
     "- 2026-09-12 — `langgenius/dify#42212` merged — ignore blank keyword rows in moderation limit",
-    "- 2026-09-20 — `langgenius/dify#42171` merged — preserve Notion mention and equation text",
     "- 2026-09-11 — `openclaw/openclaw#145220` merged — doctor --fix gateway repair",
-    "- 2026-09-11 — `openclaw/openclaw#144579` merged — transcript output contract",
-    "- 2026-09-07 — `agentscope-ai/QwenPaw#7593` merged — session direct path input",
 ]
 
 README = Path(__file__).resolve().parent.parent / "README.md"
@@ -53,7 +52,7 @@ def try_live_lines() -> list[str] | None:
         if not items:
             return None  # fail-safe: keep existing block
         lines: list[str] = []
-        for it in items[:7]:
+        for it in items[:5]:
             url = it.get("html_url", "")
             title = (it.get("title", "") or "").strip().replace("\n", " ")[:90]
             closed = (it.get("closed_at", "") or "")[:10]
