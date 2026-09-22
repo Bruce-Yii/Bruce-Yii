@@ -1,14 +1,23 @@
-# Bruce-Yii
+# 👋 Hi, I'm Bruce Yi
 
 **AI Product · Agent Systems · Open Source**
 
 I fix agent systems upstream: CLI reliability, RAG fidelity, eval correctness, OAuth edge cases. Small, verifiable patches — merged, not claimed.
+
+<p>
+  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=Bruce-Yii" />
+  <img alt="Open Source" src="https://img.shields.io/badge/Open_Source-merged_upstream-blue" />
+  <img alt="AI Product" src="https://img.shields.io/badge/AI_Product-agent_systems-8A2BE2" />
+  <img alt="Agent Systems" src="https://img.shields.io/badge/Agent_Systems-reliability-green" />
+</p>
 
 - Focus: agent CLIs & gateways (OpenClaw), RAG pipelines (Dify), eval harnesses (ModelScope EvalScope), console & auth flows (QwenPaw, OpenCodex), install reliability (dsh-market)
 - Method: reproduce first, keep the diff minimal, verify against current `main`
 - Profile: [github.com/Bruce-Yii](https://github.com/Bruce-Yii)
 
 ## Upstream contributions (merged, verifiable)
+
+Every entry links to a merged upstream PR — no claims without a link.
 
 | Area | Merged PR | What changed |
 |------|-----------|--------------|
