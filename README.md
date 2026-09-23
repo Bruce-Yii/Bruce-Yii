@@ -23,6 +23,33 @@ I fix agent systems upstream: CLI reliability, RAG fidelity, eval correctness, O
   <img src="assets/hologram-2.gif" width="49%" alt="holographic sticker animation" />
 </p>
 
+### ⭐ 六个代表性 merged PR
+
+<table align="center">
+  <tr>
+    <td align="center" width="33%" style="padding:10px">
+      <a href="https://github.com/openclaw/openclaw/pull/145220"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="46" style="border-radius:8px"/><br/><b>OpenClaw</b><br/><sub>doctor --fix 修复 systemd 网关停止</sub><br/><sub>🟣 merged 2026-09-11</sub></a>
+    </td>
+    <td align="center" width="33%" style="padding:10px">
+      <a href="https://github.com/langgenius/dify/pull/42221"><img src="https://avatars.githubusercontent.com/u/127165244?v=4" width="46" style="border-radius:8px"/><br/><b>Dify</b><br/><sub>标注 CSV 导入保留字面 "NA"</sub><br/><sub>🟣 merged 2026-09-12</sub></a>
+    </td>
+    <td align="center" width="33%" style="padding:10px">
+      <a href="https://github.com/modelscope/evalscope/pull/1729"><img src="https://avatars.githubusercontent.com/u/109945100?v=4" width="46" style="border-radius:8px"/><br/><b>EvalScope</b><br/><sub>新增多图 MMMU 压测模式</sub><br/><sub>🟣 merged 2026-09-17</sub></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%" style="padding:10px">
+      <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><img src="https://avatars.githubusercontent.com/u/211762292?v=4" width="46" style="border-radius:8px"/><br/><b>QwenPaw</b><br/><sub>恢复控制台会话直接路径输入</sub><br/><sub>🟣 merged 2026-09-07</sub></a>
+    </td>
+    <td align="center" width="33%" style="padding:10px">
+      <a href="https://github.com/architectds/modeldock/pull/11"><img src="https://avatars.githubusercontent.com/u/3438655?v=4" width="46" style="border-radius:8px"/><br/><b>ModelDock</b><br/><sub>设置写入边界校验 provider token</sub><br/><sub>🟣 merged 2026-08-09</sub></a>
+    </td>
+    <td align="center" width="33%" style="padding:10px">
+      <a href="https://github.com/duolahypercho/codex-router/pull/154"><img src="https://avatars.githubusercontent.com/u/108492647?v=4" width="46" style="border-radius:8px"/><br/><b>codex-router</b><br/><sub>空完成守卫预算耗尽遥测</sub><br/><sub>🟣 merged 2026-08-11</sub></a>
+    </td>
+  </tr>
+</table>
+
 - Focus: agent CLIs & gateways (OpenClaw), RAG pipelines (Dify), eval harnesses (ModelScope EvalScope), console & auth flows (QwenPaw, OpenCodex), install reliability (dsh-market)
 - Method: reproduce first, keep the diff minimal, verify against current `main`
 - Profile: [github.com/Bruce-Yii](https://github.com/Bruce-Yii)
