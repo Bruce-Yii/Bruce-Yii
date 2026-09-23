@@ -17,6 +17,12 @@ I fix agent systems upstream: CLI reliability, RAG fidelity, eval correctness, O
 
 </div>
 
+<!-- holographic animations: demos from LAWTED/holographic-sticker -->
+<p align="center">
+  <img src="assets/hologram-1.gif" width="49%" alt="holographic sticker animation" />
+  <img src="assets/hologram-2.gif" width="49%" alt="holographic sticker animation" />
+</p>
+
 - Focus: agent CLIs & gateways (OpenClaw), RAG pipelines (Dify), eval harnesses (ModelScope EvalScope), console & auth flows (QwenPaw, OpenCodex), install reliability (dsh-market)
 - Method: reproduce first, keep the diff minimal, verify against current `main`
 - Profile: [github.com/Bruce-Yii](https://github.com/Bruce-Yii)
