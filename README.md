@@ -23,29 +23,51 @@ I fix agent systems upstream: CLI reliability, RAG fidelity, eval correctness, O
   <img src="assets/hologram-2.gif" width="49%" alt="holographic sticker animation" />
 </p>
 
-### ⭐ 六个代表性 merged PR
+### ⭐ 代表性 merged PR 项目
 
 <table align="center">
   <tr>
     <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/openclaw/openclaw/pull/145220"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="46" style="border-radius:8px"/><br/><b>OpenClaw</b><br/><sub>doctor --fix 修复 systemd 网关停止</sub><br/><sub>🟣 merged 2026-09-11</sub></a>
+      <a href="https://github.com/openclaw/openclaw/pull/145220"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="46" style="border-radius:8px"/><br/><b>OpenClaw</b><br/><sub>doctor --fix 修复 systemd 网关</sub><br/><sub>🟣 09-11</sub></a>
     </td>
     <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/langgenius/dify/pull/42221"><img src="https://avatars.githubusercontent.com/u/127165244?v=4" width="46" style="border-radius:8px"/><br/><b>Dify</b><br/><sub>标注 CSV 导入保留字面 "NA"</sub><br/><sub>🟣 merged 2026-09-12</sub></a>
+      <a href="https://github.com/langgenius/dify/pull/42221"><img src="https://avatars.githubusercontent.com/u/127165244?v=4" width="46" style="border-radius:8px"/><br/><b>Dify</b><br/><sub>标注 CSV 保留字面 "NA"</sub><br/><sub>🟣 09-12</sub></a>
     </td>
     <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/modelscope/evalscope/pull/1729"><img src="https://avatars.githubusercontent.com/u/109945100?v=4" width="46" style="border-radius:8px"/><br/><b>EvalScope</b><br/><sub>新增多图 MMMU 压测模式</sub><br/><sub>🟣 merged 2026-09-17</sub></a>
+      <a href="https://github.com/modelscope/evalscope/pull/1729"><img src="https://avatars.githubusercontent.com/u/109945100?v=4" width="46" style="border-radius:8px"/><br/><b>EvalScope</b><br/><sub>多图 MMMU 压测模式</sub><br/><sub>🟣 09-17</sub></a>
     </td>
   </tr>
   <tr>
     <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><img src="https://avatars.githubusercontent.com/u/211762292?v=4" width="46" style="border-radius:8px"/><br/><b>QwenPaw</b><br/><sub>恢复控制台会话直接路径输入</sub><br/><sub>🟣 merged 2026-09-07</sub></a>
+      <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><img src="https://avatars.githubusercontent.com/u/211762292?v=4" width="46" style="border-radius:8px"/><br/><b>QwenPaw</b><br/><sub>恢复控制台直接路径输入</sub><br/><sub>🟣 09-07</sub></a>
     </td>
     <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/architectds/modeldock/pull/11"><img src="https://avatars.githubusercontent.com/u/3438655?v=4" width="46" style="border-radius:8px"/><br/><b>ModelDock</b><br/><sub>设置写入边界校验 provider token</sub><br/><sub>🟣 merged 2026-08-09</sub></a>
+      <a href="https://github.com/architectds/modeldock/pull/11"><img src="https://avatars.githubusercontent.com/u/3438655?v=4" width="46" style="border-radius:8px"/><br/><b>ModelDock</b><br/><sub>设置边界校验 token</sub><br/><sub>🟣 08-09</sub></a>
     </td>
     <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/duolahypercho/codex-router/pull/154"><img src="https://avatars.githubusercontent.com/u/108492647?v=4" width="46" style="border-radius:8px"/><br/><b>codex-router</b><br/><sub>空完成守卫预算耗尽遥测</sub><br/><sub>🟣 merged 2026-08-11</sub></a>
+      <a href="https://github.com/dsh-market/dsh-market/pull/117"><img src="https://avatars.githubusercontent.com/u/316826596?v=4" width="46" style="border-radius:8px"/><br/><b>dsh-market</b><br/><sub>pnpm 超时识别重试</sub><br/><sub>🟣 08-16</sub></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%" style="padding:10px">
+      <a href="https://github.com/lidge-jun/opencodex/pull/1418"><img src="https://avatars.githubusercontent.com/u/243035832?v=4" width="46" style="border-radius:8px"/><br/><b>OpenCodex</b><br/><sub>OAuth 过期 NaN 防护</sub><br/><sub>🟣 08-10</sub></a>
+    </td>
+    <td align="center" width="33%" style="padding:10px">
+      <a href="https://github.com/Ephemeral-AI-Lab/dsh-plugins/pull/5"><img src="https://avatars.githubusercontent.com/u/301956475?v=4" width="46" style="border-radius:8px"/><br/><b>dsh-plugins</b><br/><sub>移除硬编码绝对路径</sub><br/><sub>🟣 08-19</sub></a>
+    </td>
+    <td align="center" width="33%" style="padding:10px">
+      <a href="https://github.com/infiniflow/ragflow/pull/19565"><img src="https://avatars.githubusercontent.com/u/69962740?v=4" width="46" style="border-radius:8px"/><br/><b>RAGFlow</b><br/><sub>混合分支语义保留</sub><br/><sub>🟣 09-23</sub></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%" style="padding:10px">
+      <a href="https://github.com/CherryHQ/cherry-studio/pull/20970"><img src="https://avatars.githubusercontent.com/u/187777663?v=4" width="46" style="border-radius:8px"/><br/><b>Cherry Studio</b><br/><sub>binary-manager 状态对账</sub><br/><sub>🟣 09-23</sub></a>
+    </td>
+    <td align="center" width="33%" style="padding:10px">
+      <a href="https://github.com/NandhaKishorM/laya/pull/224"><img src="https://avatars.githubusercontent.com/u/48623612?v=4" width="46" style="border-radius:8px"/><br/><b>laya</b><br/><sub>对话列表时序保留</sub><br/><sub>🟣 09-23</sub></a>
+    </td>
+    <td align="center" width="33%" style="padding:10px">
+      <a href="https://github.com/search?q=author%3ABruce-Yii+is%3Apr+is%3Amerged&type=pullrequests"><img src="https://avatars.githubusercontent.com/u/298228875?v=4" width="46" style="border-radius:8px"/><br/><b>+ 36 more</b><br/><sub>查看全部 merged PR</sub><br/><sub>→</sub></a>
     </td>
   </tr>
 </table>
