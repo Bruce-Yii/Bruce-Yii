@@ -33,10 +33,10 @@ I shape product behavior, integration contracts, and developer workflows in fast
       <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii"><img src="https://raw.githubusercontent.com/NandhaKishorM/laya/970dc8c5f63d7b886a68409493f37d569424f933/assets/logo-mark.svg" width="40" height="40" alt="Laya logo" /><br/><sub><b>Laya</b></sub></a>
     </td>
     <td width="25%" align="center" valign="middle">
-      <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><img src="https://raw.githubusercontent.com/agentscope-ai/QwenPaw/3822ec7173d17cf37c8a02f51d3ed5628079e86e/scripts/pack/assets/icon.svg" width="40" height="40" alt="QwenPaw logo" /><br/><sub><b>QwenPaw</b></sub></a>
+      <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><img src="https://raw.githubusercontent.com/agentscope-ai/QwenPaw/3822ec7173d17cf37c8a02f51d3ed5628079e86e/scripts/pack/assets/icon.svg" width="40" height="40" alt="QwenPaw logo" /><br/><sub><b>Qwen<br/>Paw</b></sub></a>
     </td>
     <td width="25%" align="center" valign="middle">
-      <a href="https://github.com/modelscope/evalscope/pull/1729"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/modelscope/evalscope/06b4c67bc37d5482bdcca8b7a3dee335b9e6b5a7/docs/en/_static/images/evalscope_icon_dark.png" /><img src="https://raw.githubusercontent.com/modelscope/evalscope/06b4c67bc37d5482bdcca8b7a3dee335b9e6b5a7/docs/en/_static/images/evalscope_icon.png" width="46" height="40" alt="EvalScope logo" /></picture><br/><sub><b>EvalScope</b></sub></a>
+      <a href="https://github.com/modelscope/evalscope/pull/1729"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/modelscope/evalscope/06b4c67bc37d5482bdcca8b7a3dee335b9e6b5a7/docs/en/_static/images/evalscope_icon_dark.png" /><img src="https://raw.githubusercontent.com/modelscope/evalscope/06b4c67bc37d5482bdcca8b7a3dee335b9e6b5a7/docs/en/_static/images/evalscope_icon.png" width="46" height="40" alt="EvalScope logo" /></picture><br/><sub><b>Eval<br/>Scope</b></sub></a>
     </td>
     <td width="25%" align="center" valign="middle">
       <a href="https://github.com/modelscope/FunASR/pull/3703"><img src="https://raw.githubusercontent.com/modelscope/FunASR/41778c45de5094b664af3aa978718b56a14896cb/web-pages/product-site/legacy/favicon.ico" width="40" height="40" alt="FunASR logo" /><br/><sub><b>FunASR</b></sub></a>
@@ -44,7 +44,7 @@ I shape product behavior, integration contracts, and developer workflows in fast
   </tr>
   <tr>
     <td width="25%" align="center" valign="middle">
-      <a href="https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="40" height="40" alt="OpenClaw official GitHub avatar" /><br/><sub><b>OpenClaw</b></sub></a>
+      <a href="https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="40" height="40" alt="OpenClaw official GitHub avatar" /><br/><sub><b>Open<br/>Claw</b></sub></a>
     </td>
     <td width="25%" align="center" valign="middle">
       <a href="https://github.com/langgenius/dify/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/127165244?v=4" width="40" height="40" alt="Dify official GitHub avatar" /><br/><sub><b>Dify</b></sub></a>
@@ -53,7 +53,7 @@ I shape product behavior, integration contracts, and developer workflows in fast
       <a href="https://github.com/CherryHQ/cherry-studio/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/CherryHQ/cherry-studio/09d4ea5e2f6756a31377a388446d66253f87cd1b/build/icons/128x128.png" width="40" height="40" alt="Cherry Studio logo" /><br/><sub><b>Cherry</b></sub></a>
     </td>
     <td width="25%" align="center" valign="middle">
-      <a href="https://github.com/infiniflow/ragflow/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/infiniflow/ragflow/313ca90f6abd7682fe8523e16fd67b3653a3fa84/web/public/logo.svg" width="38" height="40" alt="RAGFlow logo" /><br/><sub><b>RAGFlow</b></sub></a>
+      <a href="https://github.com/infiniflow/ragflow/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/infiniflow/ragflow/313ca90f6abd7682fe8523e16fd67b3653a3fa84/web/public/logo.svg" width="38" height="40" alt="RAGFlow logo" /><br/><sub><b>RAG<br/>Flow</b></sub></a>
     </td>
   </tr>
 </table>
