@@ -4,15 +4,15 @@
 
 # 👋 Hi, I'm Bruce Yi
 
-**AI Product · Agent Systems · Open Source**
+**AI Product Builder · Open-source Collaborator · Agent Systems**
 
-I fix agent systems upstream: CLI reliability, RAG fidelity, eval correctness, OAuth edge cases. Small, verifiable patches — merged, not claimed.
+I work inside fast-moving AI open-source projects — shaping product behavior, integration contracts, developer workflows, and upstream implementations through code, design discussion, and cross-PR review.
 
 <p>
   <img alt="Profile views" src="https://komarev.com/ghpvc/?username=Bruce-Yii" />
-  <img alt="Open Source" src="https://img.shields.io/badge/Open_Source-merged_upstream-blue" />
-  <img alt="AI Product" src="https://img.shields.io/badge/AI_Product-agent_systems-8A2BE2" />
-  <img alt="Agent Systems" src="https://img.shields.io/badge/Agent_Systems-reliability-green" />
+  <img alt="Upstream" src="https://img.shields.io/badge/Upstream-38_merged_PRs-blue" />
+  <img alt="Repositories" src="https://img.shields.io/badge/External_repos-14-2ea44f" />
+  <img alt="Focus" src="https://img.shields.io/badge/Focus-Agent_%26_AI_Product-8A2BE2" />
 </p>
 
 </div>
@@ -23,101 +23,81 @@ I fix agent systems upstream: CLI reliability, RAG fidelity, eval correctness, O
   <img src="assets/hologram-2.gif" width="49%" alt="holographic sticker animation" />
 </p>
 
-### ⭐ 产品视角的代表性修复
+## What I work on
 
-> 不是「改了什么代码」，而是「用户少了什么麻烦」。
-
-<table align="center">
+<table>
   <tr>
-    <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/openclaw/openclaw/pull/145220"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="46" style="border-radius:8px"/><br/><b>OpenClaw</b><br/><sub>自助修复不再打断服务</sub><br/><sub>🟣 09-11</sub></a>
+    <td width="33%" valign="top">
+      <b>⚡ Laya · breakout AI project</b><br/><br/>
+      4 merged upstream PRs.<br/>
+      Product / API contract discussions.<br/>
+      Staged-adoption & integration design.<br/>
+      Cross-PR reviews that changed serving, batching, and evaluation implementations.
+      <br/><br/>
+      <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii">View contributions →</a>
     </td>
-    <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/langgenius/dify/pull/42221"><img src="https://avatars.githubusercontent.com/u/127165244?v=4" width="46" style="border-radius:8px"/><br/><b>Dify</b><br/><sub>用户数据不再丢字</sub><br/><sub>🟣 09-12</sub></a>
+    <td width="33%" valign="top">
+      <b>🧠 Qwen & ModelScope ecosystem</b><br/><br/>
+      QwenPaw upstream product/UX work.<br/>
+      EvalScope multimodal & evaluation contributions.<br/>
+      FunASR Nano timestamp correctness across offline / vLLM / pipeline paths.
+      <br/><br/>
+      <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593">QwenPaw</a> ·
+      <a href="https://github.com/modelscope/evalscope/pull/1729">EvalScope</a> ·
+      <a href="https://github.com/modelscope/FunASR/pull/3703">FunASR</a>
     </td>
-    <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/modelscope/evalscope/pull/1729"><img src="https://avatars.githubusercontent.com/u/109945100?v=4" width="46" style="border-radius:8px"/><br/><b>EvalScope</b><br/><sub>评测覆盖真实多图场景</sub><br/><sub>🟣 09-17</sub></a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><img src="https://avatars.githubusercontent.com/u/211762292?v=4" width="46" style="border-radius:8px"/><br/><b>QwenPaw</b><br/><sub>老用户操作习惯保留</sub><br/><sub>🟣 09-07</sub></a>
-    </td>
-    <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/architectds/modeldock/pull/11"><img src="https://avatars.githubusercontent.com/u/3438655?v=4" width="46" style="border-radius:8px"/><br/><b>ModelDock</b><br/><sub>错误配置即时反馈</sub><br/><sub>🟣 08-09</sub></a>
-    </td>
-    <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/dsh-market/dsh-market/pull/117"><img src="https://avatars.githubusercontent.com/u/316826596?v=4" width="46" style="border-radius:8px"/><br/><b>dsh-market</b><br/><sub>安装失败可自愈</sub><br/><sub>🟣 08-16</sub></a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/lidge-jun/opencodex/pull/1418"><img src="https://avatars.githubusercontent.com/u/243035832?v=4" width="46" style="border-radius:8px"/><br/><b>OpenCodex</b><br/><sub>登录态不被脏数据击穿</sub><br/><sub>🟣 08-10</sub></a>
-    </td>
-    <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/Ephemeral-AI-Lab/dsh-plugins/pull/5"><img src="https://avatars.githubusercontent.com/u/301956475?v=4" width="46" style="border-radius:8px"/><br/><b>dsh-plugins</b><br/><sub>换台机器不再崩</sub><br/><sub>🟣 08-19</sub></a>
-    </td>
-    <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/infiniflow/ragflow/pull/19565"><img src="https://avatars.githubusercontent.com/u/69962740?v=4" width="46" style="border-radius:8px"/><br/><b>RAGFlow</b><br/><sub>对话上下文不再丢失</sub><br/><sub>🟣 09-23</sub></a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/CherryHQ/cherry-studio/pull/20970"><img src="https://avatars.githubusercontent.com/u/187777663?v=4" width="46" style="border-radius:8px"/><br/><b>Cherry Studio</b><br/><sub>下载状态不再漂移</sub><br/><sub>🟣 09-23</sub></a>
-    </td>
-    <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/NandhaKishorM/laya/pull/224"><img src="https://avatars.githubusercontent.com/u/48623612?v=4" width="46" style="border-radius:8px"/><br/><b>laya</b><br/><sub>历史对话顺序不错乱</sub><br/><sub>🟣 09-23</sub></a>
-    </td>
-    <td align="center" width="33%" style="padding:10px">
-      <a href="https://github.com/search?q=author%3ABruce-Yii+is%3Apr+is%3Amerged&type=pullrequests"><img src="https://avatars.githubusercontent.com/u/298228875?v=4" width="46" style="border-radius:8px"/><br/><b>+ 36 more</b><br/><sub>查看全部 merged PR</sub><br/><sub>→</sub></a>
+    <td width="33%" valign="top">
+      <b>🛠️ Agent & AI infrastructure</b><br/><br/>
+      Repeated upstream work across OpenClaw, Dify, Cherry Studio, RAGFlow and other AI OSS.<br/>
+      Focused on reliability, context integrity, RAG fidelity, workflow UX, and agent runtime behavior.
+      <br/><br/>
+      <a href="https://github.com/search?q=author%3ABruce-Yii+is%3Apr+is%3Amerged&type=pullrequests">All merged PRs →</a>
     </td>
   </tr>
 </table>
 
-- Focus: agent CLIs & gateways (OpenClaw), RAG pipelines (Dify), eval harnesses (ModelScope EvalScope), console & auth flows (QwenPaw, OpenCodex), install reliability (dsh-market)
-- Method: reproduce first, keep the diff minimal, verify against current `main`
-- Profile: [github.com/Bruce-Yii](https://github.com/Bruce-Yii)
+## Selected upstream impact
 
-## Selected upstream work
+| Project | Contribution | Product / user impact |
+| --- | --- | --- |
+| **Laya** | [#224](https://github.com/NandhaKishorM/laya/pull/224) · [#292](https://github.com/NandhaKishorM/laya/pull/292) · [#328](https://github.com/NandhaKishorM/laya/pull/328) · [#115](https://github.com/NandhaKishorM/laya/pull/115) | Protect recent conversational intent, correct routing semantics, clarify full-conversation integration contracts, recover real requests hidden by email disclaimers |
+| **FunASR** | [#3703](https://github.com/modelscope/FunASR/pull/3703) | Correct Fun-ASR-Nano punctuation timestamps across VAD merges with real-tokenizer regression coverage |
+| **OpenClaw** | [4 merged PRs](https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged) | Gateway repair, CLI behavior, local inference, setup reliability |
+| **Dify** | [3 merged PRs](https://github.com/langgenius/dify/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged) | RAG ingestion fidelity, moderation behavior, annotation CSV data integrity |
+| **Cherry Studio** | [4 merged PRs](https://github.com/CherryHQ/cherry-studio/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged) | Agent runtime proxy behavior, Gemini tool-schema handling, binary-manager state correctness, and rich Excel clipboard interoperability |
+| **RAGFlow** | [4 merged PRs](https://github.com/infiniflow/ragflow/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged) | Agent message semantics plus retrieval / model utility coverage |
+| **QwenPaw** | [#7593](https://github.com/agentscope-ai/QwenPaw/pull/7593) | Restored direct workspace path input while preserving picker and validation behavior |
+| **EvalScope** | [#1729](https://github.com/modelscope/evalscope/pull/1729) · [#1720](https://github.com/modelscope/evalscope/pull/1720) | Real multi-image MMMU evaluation flow and more reliable import semantics |
 
-25 merged PRs across 10 upstream repositories — [full list](https://github.com/search?q=author%3ABruce-Yii+is%3Apr+is%3Amerged&type=pullrequests).
+> **Current footprint:** 38 merged PRs across 14 external upstream repositories.
+> I care more about useful project behavior and maintainer trust than raw PR count.
 
-**[OpenClaw](https://github.com/openclaw/openclaw) · 4 merged PRs**
-[#145220](https://github.com/openclaw/openclaw/pull/145220) · [#144579](https://github.com/openclaw/openclaw/pull/144579) · [#141569](https://github.com/openclaw/openclaw/pull/141569) · [#140531](https://github.com/openclaw/openclaw/pull/140531)
-gateway repair · CLI output · local inference · setup guard
+## How I contribute
 
-**[Dify](https://github.com/langgenius/dify) · 3 merged PRs**
-[#42221](https://github.com/langgenius/dify/pull/42221) · [#42212](https://github.com/langgenius/dify/pull/42212) · [#42171](https://github.com/langgenius/dify/pull/42171)
-data fidelity · moderation · RAG ingestion
+- **Product first** — start from the user / developer failure mode, not from “what code can I change?”
+- **Contract before code** — when behavior is ambiguous, align API / product semantics with maintainers before expanding scope.
+- **Small surface, hard evidence** — reproduce, keep the change bounded, test the real boundary, and avoid unsupported claims.
+- **Review beyond my own PRs** — inspect other contributors’ work for lifecycle, compatibility, integration, and product-contract issues.
+- **Reuse before rebuild** — prefer existing primitives and ecosystem capabilities; only add new machinery when the gap is real.
 
-**[EvalScope](https://github.com/modelscope/evalscope) · 2 merged PRs**
-[#1729](https://github.com/modelscope/evalscope/pull/1729) · [#1720](https://github.com/modelscope/evalscope/pull/1720)
-eval correctness · import guard
+## Current collaboration tracks
 
-**[QwenPaw](https://github.com/agentscope-ai/QwenPaw) · 1 merged PR**
-[#7593](https://github.com/agentscope-ai/QwenPaw/pull/7593)
-console UX
-
-### More merged contributions
-
-[dsh-market](https://github.com/dsh-market/dsh-market) ×3 — [#119](https://github.com/dsh-market/dsh-market/pull/119) · [#117](https://github.com/dsh-market/dsh-market/pull/117) · [#115](https://github.com/dsh-market/dsh-market/pull/115)
-[modeldock](https://github.com/architectds/modeldock) ×5 — [#11](https://github.com/architectds/modeldock/pull/11) · [#9](https://github.com/architectds/modeldock/pull/9) · [#8](https://github.com/architectds/modeldock/pull/8) · [#7](https://github.com/architectds/modeldock/pull/7) · [#5](https://github.com/architectds/modeldock/pull/5)
-[codex-router](https://github.com/duolahypercho/codex-router) ×3 — [#154](https://github.com/duolahypercho/codex-router/pull/154) · [#151](https://github.com/duolahypercho/codex-router/pull/151) · [#132](https://github.com/duolahypercho/codex-router/pull/132)
-[opencodex](https://github.com/lidge-jun/opencodex) ×2 — [#1418](https://github.com/lidge-jun/opencodex/pull/1418) · [#1369](https://github.com/lidge-jun/opencodex/pull/1369)
-[dsh-plugins](https://github.com/Ephemeral-AI-Lab/dsh-plugins) ×1 — [#5](https://github.com/Ephemeral-AI-Lab/dsh-plugins/pull/5)
-[boss-zhipin-scraper](https://github.com/eatmoreduck/boss-zhipin-scraper) ×1 (fork) — [#54](https://github.com/eatmoreduck/boss-zhipin-scraper/pull/54)
+**Laya** — staged adoption, CLI / MCP docs, product-contract and integration discussions
+**ModelScope / EvalScope / FunASR** — evaluation, multimodal workloads, Agent evaluation, ASR correctness
+**OpenClaw / Dify / Cherry Studio / RAGFlow** — agent runtime, developer workflow, RAG / context fidelity
+**n8n and other AI OSS** — active upstream contribution and review
 
 ## Recent OSS activity
 
 <!-- OSS-ACTIVITY:START -->
-- 2026-09-20 — `langgenius/dify#42171` merged — fix(rag): preserve Notion mention and equation text
-- 2026-09-17 — `modelscope/evalscope#1729` merged — feat(perf): add real multi-image MMMU dataset mode
-- 2026-09-12 — `langgenius/dify#42221` merged — fix(api): preserve literal NA in annotation CSV imports
-- 2026-09-12 — `langgenius/dify#42212` merged — fix: ignore blank keyword rows in moderation limit
-- 2026-09-11 — `openclaw/openclaw#145220` merged — fix(doctor): doctor --fix leaves systemd-user gateway stopped after repair
+- 2026-09-25 — `CherryHQ/cherry-studio#21031` merged — fix(composer): prefer text for rich Excel clipboard pastes
+- 2026-09-25 — `modelscope/FunASR#3703` merged — fix(nano): correct punctuation timestamps across VAD merges
+- 2026-09-24 — `NandhaKishorM/laya#328` merged — docs(langchain): document full-conversation state extraction
+- 2026-09-24 — `NandhaKishorM/laya#292` merged — fix(router): blank/whitespace explicit lang falls through to detection
+- 2026-09-23 — `CherryHQ/cherry-studio#20946` merged — fix(dsh-runtime): inherit applied proxy env into the dsh child
 <!-- OSS-ACTIVITY:END -->
 
-> Auto-updated weekly; handwritten sections preserved via markers.
+> Auto-updated activity can overwrite only the block above; the rest of this profile is intentionally curated.
 
 ## Contributions
 
