@@ -86,10 +86,10 @@ I work across AI open-source projects on product behavior, integration contracts
   </tr>
   <tr>
     <td width="84" align="center" valign="top">
-      <a href="https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="20" height="20" alt="OpenClaw official GitHub avatar" /></a>
-      <a href="https://github.com/langgenius/dify/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/127165244?v=4" width="20" height="20" alt="Dify official GitHub avatar" /></a><br/>
-      <a href="https://github.com/CherryHQ/cherry-studio/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/CherryHQ/cherry-studio/09d4ea5e2f6756a31377a388446d66253f87cd1b/build/icons/128x128.png" width="20" height="20" alt="Cherry Studio logo" /></a>
-      <a href="https://github.com/infiniflow/ragflow/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/infiniflow/ragflow/313ca90f6abd7682fe8523e16fd67b3653a3fa84/web/public/logo.svg" width="19" height="20" alt="RAGFlow logo" /></a>
+      <a href="https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="24" height="24" alt="OpenClaw official GitHub avatar" /></a>
+      <a href="https://github.com/langgenius/dify/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/127165244?v=4" width="24" height="24" alt="Dify official GitHub avatar" /></a><br/>
+      <a href="https://github.com/CherryHQ/cherry-studio/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/CherryHQ/cherry-studio/09d4ea5e2f6756a31377a388446d66253f87cd1b/build/icons/128x128.png" width="24" height="24" alt="Cherry Studio logo" /></a>
+      <a href="https://github.com/infiniflow/ragflow/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/infiniflow/ragflow/313ca90f6abd7682fe8523e16fd67b3653a3fa84/web/public/logo.svg" width="23" height="24" alt="RAGFlow logo" /></a>
     </td>
     <td valign="top">
       <b>Agent OSS</b><br/>
@@ -145,18 +145,6 @@ I work across AI open-source projects on product behavior, integration contracts
     <td width="50%" valign="top"><b>n8n + other AI OSS</b><br/><sub>upstream implementation · cross-project review</sub></td>
   </tr>
 </table>
-
-## Recent OSS activity
-
-<!-- OSS-ACTIVITY:START -->
-- 2026-09-25 — `NandhaKishorM/laya#415` merged — docs: add staged adoption guide
-- 2026-09-25 — `CherryHQ/cherry-studio#21031` merged — fix(composer): prefer text for rich Excel clipboard pastes
-- 2026-09-25 — `modelscope/FunASR#3703` merged — fix(nano): correct punctuation timestamps across VAD merges
-- 2026-09-24 — `NandhaKishorM/laya#328` merged — docs(langchain): document full-conversation state extraction
-- 2026-09-24 — `NandhaKishorM/laya#292` merged — fix(router): blank/whitespace explicit lang falls through to detection
-<!-- OSS-ACTIVITY:END -->
-
-> This activity block updates automatically; the rest of the profile is curated by hand.
 
 ## Contributions
 

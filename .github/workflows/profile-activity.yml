@@ -1,8 +1,9 @@
 name: profile-activity
 
 on:
-  schedule:
-    - cron: "0 1 * * 1" # weekly, Monday 01:00 UTC
+  # The OSS-ACTIVITY markers were removed from README.md in v2.4, so this job has
+  # nothing left to refresh. Manual runs only; re-enable the schedule if the
+  # activity timeline is ever brought back.
   workflow_dispatch:
 
 permissions:
@@ -16,7 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Refresh OSS activity block (marker-preserving, fail-safe)
+      - name: Refresh OSS activity block if markers exist (no-op since v2.4)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update-activity.py

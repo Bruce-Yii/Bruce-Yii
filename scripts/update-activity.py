@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Weekly OSS activity updater. Marker-preserving, fail-safe, no empty commits.
+"""OSS activity updater. Dormant since v2.4: manual runs only, and a safe no-op.
 
 - Reads curated merged-PR list (verified 2026-09-22) or, when GITHUB_TOKEN +
   network are available, refreshes dates from the GitHub API.
@@ -18,7 +18,10 @@ END = "<!-- OSS-ACTIVITY:END -->"
 
 # Curated fallback: verified merged 2026-09-22 via GitHub search
 # author:Bruce-Yii is:pr is:merged. Dates are merge (closed_at) dates.
-# Kept at 5 most recent to match the compressed freshness block in README.
+# Dormant since v2.4: the markers were removed from README.md, so this list is no longer
+# rendered. It is STALE relative to the timeline it replaced (entries dated 2026-09-11 to
+# 09-20). If the timeline is ever restored, refresh this list from the GitHub API with a
+# token before the first manual run, or a tokenless run will write visibly older entries.
 FALLBACK_LINES = [
     "- 2026-09-20 — `langgenius/dify#42171` merged — preserve Notion mention and equation text",
     "- 2026-09-17 — `modelscope/evalscope#1729` merged — real multi-image MMMU dataset mode",
