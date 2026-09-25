@@ -10,7 +10,7 @@ I shape product behavior, integration contracts, and developer workflows in fast
 
 <p>
   <img alt="Profile views" src="https://komarev.com/ghpvc/?username=Bruce-Yii" />
-  <img alt="Upstream" src="https://img.shields.io/badge/Upstream-38_merged_PRs-blue" />
+  <img alt="Upstream" src="https://img.shields.io/badge/Upstream-39_merged_PRs-blue" />
   <img alt="Repositories" src="https://img.shields.io/badge/External_repos-14-2ea44f" />
   <img alt="Focus" src="https://img.shields.io/badge/Focus-Agent_%26_AI_Product-8A2BE2" />
 </p>
@@ -67,7 +67,7 @@ I shape product behavior, integration contracts, and developer workflows in fast
       <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii"><img src="https://raw.githubusercontent.com/NandhaKishorM/laya/970dc8c5f63d7b886a68409493f37d569424f933/assets/logo-mark.svg" width="52" height="52" alt="Laya logo" /></a><br/><br/>
       <b>Laya</b><br/>
       <sub>Product ·<br/>integration · review</sub><br/><br/>
-      4 merged upstream PRs<br/>
+      5 merged upstream PRs<br/>
       Staged adoption<br/>
       Cross-PR review<br/><br/>
       <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii"><b>View work →</b></a>
@@ -97,7 +97,7 @@ I shape product behavior, integration contracts, and developer workflows in fast
 
 | Project | Contribution | Product / user impact |
 | --- | --- | --- |
-| **Laya** | [#224](https://github.com/NandhaKishorM/laya/pull/224) · [#292](https://github.com/NandhaKishorM/laya/pull/292) · [#328](https://github.com/NandhaKishorM/laya/pull/328) · [#115](https://github.com/NandhaKishorM/laya/pull/115) | Protect recent intent, correct routing semantics, clarify full-conversation contracts, and recover requests hidden by email disclaimers |
+| **Laya** | [#224](https://github.com/NandhaKishorM/laya/pull/224) · [#292](https://github.com/NandhaKishorM/laya/pull/292) · [#328](https://github.com/NandhaKishorM/laya/pull/328) · [#115](https://github.com/NandhaKishorM/laya/pull/115) · [#415](https://github.com/NandhaKishorM/laya/pull/415) | Document staged adoption, protect recent intent, correct routing semantics, clarify full-conversation contracts, and recover requests hidden by email disclaimers |
 | **QwenPaw** | [#7593](https://github.com/agentscope-ai/QwenPaw/pull/7593) | Restore direct workspace path input while preserving picker and validation behavior |
 | **EvalScope** | [#1729](https://github.com/modelscope/evalscope/pull/1729) · [#1720](https://github.com/modelscope/evalscope/pull/1720) | Real multi-image MMMU evaluation and more reliable import semantics |
 | **FunASR** | [#3703](https://github.com/modelscope/FunASR/pull/3703) | Correct Fun-ASR-Nano punctuation timestamps across VAD merges with real-tokenizer coverage |
@@ -108,7 +108,7 @@ I shape product behavior, integration contracts, and developer workflows in fast
 
 </details>
 
-> **Current footprint:** 38 merged PRs across 14 external upstream repositories.
+> **Current footprint:** 39 merged PRs across 14 external upstream repositories.
 > Useful project behavior and maintainer trust matter more than raw PR count.
 
 ## How I contribute
@@ -140,11 +140,11 @@ I shape product behavior, integration contracts, and developer workflows in fast
 ## Recent OSS activity
 
 <!-- OSS-ACTIVITY:START -->
+- 2026-09-25 — `NandhaKishorM/laya#415` merged — docs: add staged adoption guide
 - 2026-09-25 — `CherryHQ/cherry-studio#21031` merged — fix(composer): prefer text for rich Excel clipboard pastes
 - 2026-09-25 — `modelscope/FunASR#3703` merged — fix(nano): correct punctuation timestamps across VAD merges
 - 2026-09-24 — `NandhaKishorM/laya#328` merged — docs(langchain): document full-conversation state extraction
 - 2026-09-24 — `NandhaKishorM/laya#292` merged — fix(router): blank/whitespace explicit lang falls through to detection
-- 2026-09-23 — `CherryHQ/cherry-studio#20946` merged — fix(dsh-runtime): inherit applied proxy env into the dsh child
 <!-- OSS-ACTIVITY:END -->
 
 > Auto-updated activity can overwrite only the block above; the rest of this profile is intentionally curated.
