@@ -6,11 +6,10 @@
 
 **AI Product Builder · Open-source Collaborator · Agent Systems**
 
-I work across AI open-source projects on product behavior, integration contracts, developer workflows, and upstream implementation.
+I work across AI open-source projects on product behavior, integration contracts, developer workflows, and implementation work.
 
 <p>
   <img alt="Profile views" src="https://komarev.com/ghpvc/?username=Bruce-Yii" />
-  <img alt="Upstream" src="https://img.shields.io/badge/Upstream-39_merged_PRs-blue" />
   <img alt="Repositories" src="https://img.shields.io/badge/External_repos-14-2ea44f" />
   <img alt="Focus" src="https://img.shields.io/badge/Focus-Agent_%26_AI_Product-8A2BE2" />
 </p>
@@ -108,8 +107,8 @@ I work across AI open-source projects on product behavior, integration contracts
 
 </details>
 
-> **Current footprint:** 39 merged PRs across 14 external upstream repositories.
-> I optimize for useful upstream changes and maintainer trust, not PR volume.
+> **Current footprint:** contributions across 14 external upstream repositories.
+> I care about useful upstream changes and maintainer trust more than PR volume.
 
 ## How I contribute
 
