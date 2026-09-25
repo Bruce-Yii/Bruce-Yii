@@ -26,7 +26,7 @@ I shape product behavior, integration contracts, and developer workflows in fast
 <!-- Official project marks are hotlinked from repository-owned assets pinned to immutable upstream commits, with official GitHub org avatars used only where a compact repository mark is unavailable. -->
 ## OSS Constellation
 
-<table width="100%">
+<table width="100%" style="width:100%; table-layout:fixed;">
   <tr>
     <td width="25%" align="center" valign="middle">
       <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii"><img src="https://raw.githubusercontent.com/NandhaKishorM/laya/970dc8c5f63d7b886a68409493f37d569424f933/assets/logo-mark.svg" width="40" height="40" alt="Laya logo" /><br/><b>Laya</b></a>
@@ -59,7 +59,7 @@ I shape product behavior, integration contracts, and developer workflows in fast
 
 ## Flagship collaboration
 
-<table width="100%">
+<table width="100%" style="width:100%; table-layout:fixed;">
   <tr>
     <td width="33%" align="center" valign="top">
       <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii"><img src="https://raw.githubusercontent.com/NandhaKishorM/laya/970dc8c5f63d7b886a68409493f37d569424f933/assets/logo-mark.svg" width="52" height="52" alt="Laya logo" /></a><br/><br/>
