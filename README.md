@@ -60,36 +60,46 @@ I work across AI open-source projects on product behavior, integration contracts
 
 ## Featured collaborations
 
-<table width="100%" style="width:100%; table-layout:fixed;">
+<div align="center">
+<table width="100%">
   <tr>
-    <td width="33%" align="center" valign="top">
-      <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii"><img src="https://raw.githubusercontent.com/NandhaKishorM/laya/970dc8c5f63d7b886a68409493f37d569424f933/assets/logo-mark.svg" width="52" height="52" alt="Laya logo" /></a><br/><br/>
+    <td width="84" align="center" valign="top">
+      <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii"><img src="https://raw.githubusercontent.com/NandhaKishorM/laya/970dc8c5f63d7b886a68409493f37d569424f933/assets/logo-mark.svg" width="52" height="52" alt="Laya logo" /></a>
+    </td>
+    <td valign="top">
       <b>Laya</b><br/>
-      <sub>Product contracts ·<br/>adoption · review</sub><br/><br/>
-      5 merged PRs<br/>
-      Staged adoption<br/>
-      Cross-PR review<br/><br/>
+      <sub>Product contracts · adoption · review</sub><br/>
+      5 merged PRs · staged adoption · cross-PR review<br/>
       <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii"><b>View work →</b></a>
     </td>
-    <td width="33%" align="center" valign="top">
-      <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><img src="https://raw.githubusercontent.com/agentscope-ai/QwenPaw/3822ec7173d17cf37c8a02f51d3ed5628079e86e/scripts/pack/assets/icon.svg" width="52" height="52" alt="QwenPaw logo" /></a><br/><br/>
-      <b>Qwen ×<br/>ModelScope</b><br/>
-      <sub>Agent UX · multimodal eval · speech reliability</sub><br/><br/>
-      QwenPaw product UX<br/>
-      EvalScope<br/>multimodal eval<br/>
-      FunASR Nano timestamps<br/><br/>
+  </tr>
+  <tr>
+    <td width="84" align="center" valign="top">
+      <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><img src="https://raw.githubusercontent.com/agentscope-ai/QwenPaw/3822ec7173d17cf37c8a02f51d3ed5628079e86e/scripts/pack/assets/icon.svg" width="52" height="52" alt="QwenPaw logo" /></a>
+    </td>
+    <td valign="top">
+      <b>Qwen × ModelScope</b><br/>
+      <sub>Agent UX · multimodal eval · speech reliability</sub><br/>
+      QwenPaw product UX · EvalScope multimodal eval · FunASR Nano timestamps<br/>
       <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><b>Explore work →</b></a>
     </td>
-    <td width="33%" align="center" valign="top">
-      <a href="https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="16" height="16" alt="OpenClaw official GitHub avatar" /></a><a href="https://github.com/langgenius/dify/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/127165244?v=4" width="16" height="16" alt="Dify official GitHub avatar" /></a><a href="https://github.com/CherryHQ/cherry-studio/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/CherryHQ/cherry-studio/09d4ea5e2f6756a31377a388446d66253f87cd1b/build/icons/128x128.png" width="16" height="16" alt="Cherry Studio logo" /></a><a href="https://github.com/infiniflow/ragflow/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/infiniflow/ragflow/313ca90f6abd7682fe8523e16fd67b3653a3fa84/web/public/logo.svg" width="15" height="16" alt="RAGFlow logo" /></a><br/><br/>
+  </tr>
+  <tr>
+    <td width="84" align="center" valign="top">
+      <a href="https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="20" height="20" alt="OpenClaw official GitHub avatar" /></a>
+      <a href="https://github.com/langgenius/dify/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/127165244?v=4" width="20" height="20" alt="Dify official GitHub avatar" /></a><br/>
+      <a href="https://github.com/CherryHQ/cherry-studio/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/CherryHQ/cherry-studio/09d4ea5e2f6756a31377a388446d66253f87cd1b/build/icons/128x128.png" width="20" height="20" alt="Cherry Studio logo" /></a>
+      <a href="https://github.com/infiniflow/ragflow/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/infiniflow/ragflow/313ca90f6abd7682fe8523e16fd67b3653a3fa84/web/public/logo.svg" width="19" height="20" alt="RAGFlow logo" /></a>
+    </td>
+    <td valign="top">
       <b>Agent OSS</b><br/>
-      <sub>Runtime · RAG · context integrity</sub><br/><br/>
-      OpenClaw ×4<br/>Dify ×3<br/>
-      Cherry ×4<br/>RAGFlow ×4<br/><br/>
+      <sub>Runtime · RAG · context integrity</sub><br/>
+      OpenClaw ×4 · Dify ×3 · Cherry ×4 · RAGFlow ×4<br/>
       <a href="https://github.com/search?q=author%3ABruce-Yii+is%3Apr+is%3Amerged&type=pullrequests"><b>All PRs →</b></a>
     </td>
   </tr>
 </table>
+</div>
 
 <details>
 <summary><b>Selected upstream impact — PR evidence</b></summary>
