@@ -29,30 +29,30 @@ I shape product behavior, integration contracts, and developer workflows in fast
 <table width="100%" style="width:100%; table-layout:fixed;">
   <tr>
     <td width="25%" align="center" valign="middle">
-      <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii"><img src="https://raw.githubusercontent.com/NandhaKishorM/laya/970dc8c5f63d7b886a68409493f37d569424f933/assets/logo-mark.svg" width="40" height="40" alt="Laya logo" /><br/><b>Laya</b></a>
+      <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii"><img src="https://raw.githubusercontent.com/NandhaKishorM/laya/970dc8c5f63d7b886a68409493f37d569424f933/assets/logo-mark.svg" width="40" height="40" alt="Laya logo" /><br/><small><b>Laya</b></small></a>
     </td>
     <td width="25%" align="center" valign="middle">
-      <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><img src="https://raw.githubusercontent.com/agentscope-ai/QwenPaw/3822ec7173d17cf37c8a02f51d3ed5628079e86e/scripts/pack/assets/icon.svg" width="40" height="40" alt="QwenPaw logo" /><br/><b>QwenPaw</b></a>
+      <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><img src="https://raw.githubusercontent.com/agentscope-ai/QwenPaw/3822ec7173d17cf37c8a02f51d3ed5628079e86e/scripts/pack/assets/icon.svg" width="40" height="40" alt="QwenPaw logo" /><br/><small><b>QwenPaw</b></small></a>
     </td>
     <td width="25%" align="center" valign="middle">
-      <a href="https://github.com/modelscope/evalscope/pull/1729"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/modelscope/evalscope/06b4c67bc37d5482bdcca8b7a3dee335b9e6b5a7/docs/en/_static/images/evalscope_icon_dark.png" /><img src="https://raw.githubusercontent.com/modelscope/evalscope/06b4c67bc37d5482bdcca8b7a3dee335b9e6b5a7/docs/en/_static/images/evalscope_icon.png" width="46" height="40" alt="EvalScope logo" /></picture><br/><b>EvalScope</b></a>
+      <a href="https://github.com/modelscope/evalscope/pull/1729"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/modelscope/evalscope/06b4c67bc37d5482bdcca8b7a3dee335b9e6b5a7/docs/en/_static/images/evalscope_icon_dark.png" /><img src="https://raw.githubusercontent.com/modelscope/evalscope/06b4c67bc37d5482bdcca8b7a3dee335b9e6b5a7/docs/en/_static/images/evalscope_icon.png" width="46" height="40" alt="EvalScope logo" /></picture><br/><small><b>EvalScope</b></small></a>
     </td>
     <td width="25%" align="center" valign="middle">
-      <a href="https://github.com/modelscope/FunASR/pull/3703"><img src="https://raw.githubusercontent.com/modelscope/FunASR/41778c45de5094b664af3aa978718b56a14896cb/web-pages/product-site/legacy/favicon.ico" width="40" height="40" alt="FunASR logo" /><br/><b>FunASR</b></a>
+      <a href="https://github.com/modelscope/FunASR/pull/3703"><img src="https://raw.githubusercontent.com/modelscope/FunASR/41778c45de5094b664af3aa978718b56a14896cb/web-pages/product-site/legacy/favicon.ico" width="40" height="40" alt="FunASR logo" /><br/><small><b>FunASR</b></small></a>
     </td>
   </tr>
   <tr>
     <td width="25%" align="center" valign="middle">
-      <a href="https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="40" height="40" alt="OpenClaw official GitHub avatar" /><br/><b>OpenClaw</b></a>
+      <a href="https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="40" height="40" alt="OpenClaw official GitHub avatar" /><br/><small><b>OpenClaw</b></small></a>
     </td>
     <td width="25%" align="center" valign="middle">
-      <a href="https://github.com/langgenius/dify/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/127165244?v=4" width="40" height="40" alt="Dify official GitHub avatar" /><br/><b>Dify</b></a>
+      <a href="https://github.com/langgenius/dify/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/127165244?v=4" width="40" height="40" alt="Dify official GitHub avatar" /><br/><small><b>Dify</b></small></a>
     </td>
     <td width="25%" align="center" valign="middle">
-      <a href="https://github.com/CherryHQ/cherry-studio/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/CherryHQ/cherry-studio/09d4ea5e2f6756a31377a388446d66253f87cd1b/build/icons/128x128.png" width="40" height="40" alt="Cherry Studio logo" /><br/><b>Cherry Studio</b></a>
+      <a href="https://github.com/CherryHQ/cherry-studio/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/CherryHQ/cherry-studio/09d4ea5e2f6756a31377a388446d66253f87cd1b/build/icons/128x128.png" width="40" height="40" alt="Cherry Studio logo" /><br/><small><b>Cherry</b></small></a>
     </td>
     <td width="25%" align="center" valign="middle">
-      <a href="https://github.com/infiniflow/ragflow/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/infiniflow/ragflow/313ca90f6abd7682fe8523e16fd67b3653a3fa84/web/public/logo.svg" width="38" height="40" alt="RAGFlow logo" /><br/><b>RAGFlow</b></a>
+      <a href="https://github.com/infiniflow/ragflow/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/infiniflow/ragflow/313ca90f6abd7682fe8523e16fd67b3653a3fa84/web/public/logo.svg" width="38" height="40" alt="RAGFlow logo" /><br/><small><b>RAGFlow</b></small></a>
     </td>
   </tr>
 </table>
@@ -64,30 +64,27 @@ I shape product behavior, integration contracts, and developer workflows in fast
     <td width="33%" align="center" valign="top">
       <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii"><img src="https://raw.githubusercontent.com/NandhaKishorM/laya/970dc8c5f63d7b886a68409493f37d569424f933/assets/logo-mark.svg" width="52" height="52" alt="Laya logo" /></a><br/><br/>
       <b>Laya</b><br/>
-      <sub>Product collaboration · integration contracts · review</sub><br/><br/>
+      <sub>Product · integration · review</sub><br/><br/>
       4 merged upstream PRs<br/>
       Staged adoption · Agent integration<br/>
-      Cross-PR review changed implementations<br/><br/>
+      Cross-PR review changed code<br/><br/>
       <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii"><b>View Laya work →</b></a>
     </td>
     <td width="33%" align="center" valign="top">
       <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><img src="https://raw.githubusercontent.com/agentscope-ai/QwenPaw/3822ec7173d17cf37c8a02f51d3ed5628079e86e/scripts/pack/assets/icon.svg" width="52" height="52" alt="QwenPaw logo" /></a><br/><br/>
       <b>Qwen × ModelScope</b><br/>
-      <sub>Agent UX · evaluation · speech correctness</sub><br/><br/>
-      QwenPaw upstream UX<br/>
-      EvalScope multimodal evaluation<br/>
-      FunASR Nano timestamp correctness<br/><br/>
+      <sub>Agent UX · evaluation · speech</sub><br/><br/>
+      QwenPaw UX<br/>
+      EvalScope multimodal<br/>
+      FunASR Nano timing<br/><br/>
       <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><b>Explore ecosystem work →</b></a>
     </td>
     <td width="33%" align="center" valign="top">
-      <a href="https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="22" height="22" alt="OpenClaw official GitHub avatar" /></a>
-      <a href="https://github.com/langgenius/dify/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/127165244?v=4" width="22" height="22" alt="Dify official GitHub avatar" /></a>
-      <a href="https://github.com/CherryHQ/cherry-studio/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/CherryHQ/cherry-studio/09d4ea5e2f6756a31377a388446d66253f87cd1b/build/icons/128x128.png" width="22" height="22" alt="Cherry Studio logo" /></a>
-      <a href="https://github.com/infiniflow/ragflow/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/infiniflow/ragflow/313ca90f6abd7682fe8523e16fd67b3653a3fa84/web/public/logo.svg" width="21" height="22" alt="RAGFlow logo" /></a><br/><br/>
+      <a href="https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/252820863?v=4" width="22" height="22" alt="OpenClaw official GitHub avatar" /></a><a href="https://github.com/langgenius/dify/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://avatars.githubusercontent.com/u/127165244?v=4" width="22" height="22" alt="Dify official GitHub avatar" /></a><a href="https://github.com/CherryHQ/cherry-studio/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/CherryHQ/cherry-studio/09d4ea5e2f6756a31377a388446d66253f87cd1b/build/icons/128x128.png" width="22" height="22" alt="Cherry Studio logo" /></a><a href="https://github.com/infiniflow/ragflow/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged"><img src="https://raw.githubusercontent.com/infiniflow/ragflow/313ca90f6abd7682fe8523e16fd67b3653a3fa84/web/public/logo.svg" width="21" height="22" alt="RAGFlow logo" /></a><br/><br/>
       <b>Agent & AI OSS</b><br/>
-      <sub>Runtime · RAG · context fidelity · developer UX</sub><br/><br/>
+      <sub>Runtime · RAG · context · developer UX</sub><br/><br/>
       OpenClaw ×4 · Dify ×3<br/>
-      Cherry Studio ×4 · RAGFlow ×4<br/><br/>
+      Cherry ×4 · RAGFlow ×4<br/><br/>
       <a href="https://github.com/search?q=author%3ABruce-Yii+is%3Apr+is%3Amerged&type=pullrequests"><b>All merged PRs →</b></a>
     </td>
   </tr>
