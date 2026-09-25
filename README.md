@@ -26,6 +26,7 @@ I shape product behavior, integration contracts, and developer workflows in fast
 <!-- Official project marks are hotlinked from repository-owned assets pinned to immutable upstream commits, with official GitHub org avatars used only where a compact repository mark is unavailable. -->
 ## OSS Constellation
 
+<div align="center">
 <table width="100%" style="width:100%; table-layout:fixed;">
   <tr>
     <td width="25%" align="center" valign="middle">
@@ -56,6 +57,7 @@ I shape product behavior, integration contracts, and developer workflows in fast
     </td>
   </tr>
 </table>
+</div>
 
 ## Flagship collaboration
 
