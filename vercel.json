@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "functions": {"api/mcp.js": {"maxDuration": 30}},
+  "rewrites": [
+    {"source":"/mcp","destination":"/api/mcp?route=mcp"},
+    {"source":"/.well-known/oauth-protected-resource","destination":"/api/mcp?route=resource"},
+    {"source":"/.well-known/oauth-authorization-server","destination":"/api/mcp?route=authmeta"},
+    {"source":"/oauth/register","destination":"/api/mcp?route=register"},
+    {"source":"/oauth/authorize","destination":"/api/mcp?route=authorize"},
+    {"source":"/oauth/token","destination":"/api/mcp?route=token"},
+    {"source":"/health","destination":"/api/mcp?route=health"}
+  ]
+}
