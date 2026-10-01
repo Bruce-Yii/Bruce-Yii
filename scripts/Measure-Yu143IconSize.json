@@ -1,0 +1,29 @@
+{
+  "_comment": "WebBridge evaluate payload behind the YU-143 24px Agent OSS icon decision, plus the numbers it produced. Reproduce with: curl -s -X POST http://127.0.0.1:10086/command -H 'Content-Type: application/json' --data-binary @<this file>, after a cdp Emulation.setDeviceMetricsOverride for the target viewport. It mutates the four Agent OSS <img> width/height attributes in the live DOM, measures, then restores them, so it is safe to run against a real page.",
+  "session": "yu143-edge",
+  "action": "evaluate",
+  "args": {
+    "code": "(()=>{const a=document.querySelector('article.markdown-body');const t=Array.from(a.querySelectorAll('table')).find(x=>x.querySelectorAll('td').length===6);const cell=t.querySelectorAll('tr')[2].querySelectorAll('td')[0];const imgs=Array.from(cell.querySelectorAll('img'));const orig=imgs.map(i=>({w:i.getAttribute('width'),h:i.getAttribute('height')}));const cs=getComputedStyle(cell);const contentBox=Math.round(cell.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight));const measure=label=>{const rects=imgs.map(i=>i.getBoundingClientRect());return {label,rows:new Set(rects.map(r=>Math.round(r.top))).size,widths:rects.map(r=>Math.round(r.width)),gap:Math.round(rects[1].left-(rects[0].left+rects[0].width)),needed:Math.round(rects[0].width*2+ (rects[1].left-(rects[0].left+rects[0].width)))};};const out=[];for(const n of [24,25,26,27,28]){imgs.forEach((i,idx)=>{i.setAttribute('width',String(idx===3?n-1:n));i.setAttribute('height',String(n));});out.push(measure(n+'px'));}imgs.forEach((i,idx)=>{i.setAttribute('width',orig[idx].w);i.setAttribute('height',orig[idx].h);});return {viewport:innerWidth,cellAttr:cell.getAttribute('width'),computedCell:Math.round(cell.getBoundingClientRect().width),padding:{l:cs.paddingLeft,r:cs.paddingRight},contentBox,steps:out};})()"
+  },
+  "_measured_on": "2026-09-26, main at 947e19f (v2.3), live github.com/Bruce-Yii in Microsoft Edge, at 390px and again at 320px with identical results",
+  "_measured_results": {
+    "iconCellAttrWidth": 84,
+    "iconCellComputedWidth": 84,
+    "cellPaddingPxPerSide": 13,
+    "contentBoxPx": 57,
+    "interIconGapPx": 4,
+    "note": "rows is how many lines the 2x2 occupies. 2 is correct. The cell is fixed at 84px so these numbers are identical at 320px and 390px.",
+    "sweep": [
+      { "size": "24px", "widthNeededOf57": 52, "rows": 2, "slackPx": 5, "chosen": true },
+      { "size": "25px", "widthNeededOf57": 54, "rows": 2, "slackPx": 3 },
+      { "size": "26px", "widthNeededOf57": 56, "rows": 2, "slackPx": 1 },
+      { "size": "27px", "widthNeededOf57": 58, "rows": 3, "note": "cliff: 27px collapses the 2x2 into 3 lines" },
+      { "size": "28px", "widthNeededOf57": 60, "rows": 4 }
+    ],
+    "decision": "24px. The 84px cell is a preferred width under table-layout:auto, not guaranteed, so the useful question is how far the cell can shrink before the 2x2 breaks: 24px tolerates 79px, 26px only 83px. 25px is the ceiling if someone later wants more."
+  },
+  "_also_confirmed_by_measurement": [
+    "RAGFlow must stay non-square: 23x24. GitHub's sanitiser rewrites width/height into style=\"height:auto;max-height:24px;aspect-ratio:23 / 24\", so a square 24x24 would emit aspect-ratio 24/24 and squash the mark. Verified against api.github.com/markdown on the real README.",
+    "The v2.4 preview's blob page reported naturalWidth 0 for every external image, including the repository's own streak.svg, while a control load of the live profile reported zero broken images. That was a blob-pane image-loading artefact in that session, not a content regression, which is why v2.4 image verification was repeated on the live profile after pushing."
+  ]
+}

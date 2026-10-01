@@ -1,0 +1,57 @@
+{
+  "_comment": "Layout measurement behind the v2.6 upstream count refresh. Reproduce the simulation half with: python scripts\\Build-ProfileRenderPreview.py github-profile-vnext\\README.md out.html --width 320, and again with --baseline c0b518d for the before numbers, then open out.html in a browser. The script reports per-table client vs scroll width, per-row icon offset spread, per-column widths and the widest cell with its text. The live half is the constellation reading taken from the real rendered profile page.",
+  "_measured_on": "2026-10-01, main at 5fc9080 (v2.6), baseline c0b518d (v2.5 content)",
+  "_method": {
+    "simulation": "POST api.github.com/markdown for the HTML, then the sanitizer's style-strip and GitHub's markdown table CSS applied locally. Reproduces the renderer's attribute set and overflow behaviour but not its page padding, so absolute clientWidth differs from the live site. Overflow and icon spread are the comparable numbers.",
+    "live": "Element bounds read from the rendered profile at github.com/Bruce-Yii, 1440px viewport, after the push.",
+    "not_measured_live": "The evidence table's column widths were not read from the live page at 320px. The 134px -> 156px figure is simulation only, and it is the one number here that would be worth confirming live if the table ever gets reworked."
+  },
+  "_measured_results": {
+    "container_320": {
+      "constellation": { "clientWidth": 288, "scrollWidth": 288, "overflow": 0, "rows": 2, "cells": 8, "iconOffsetSpread": [0, 0], "colWidths": [[71, 71, 71, 74], [71, 71, 71, 74]], "baseline": "identical" },
+      "featured_cards": { "clientWidth": 288, "scrollWidth": 288, "overflow": 0, "rows": 3, "colWidths": [[84, 203], [84, 203], [84, 203]], "baseline": "identical" },
+      "evidence_table": {
+        "clientWidth": 288,
+        "scrollWidth": 384,
+        "overflow": 96,
+        "baselineScrollWidth": 362,
+        "baselineOverflow": 74,
+        "delta": 22,
+        "colWidths": [[103, 123, 156]],
+        "baselineColWidths": [[103, 123, 134]],
+        "widestCell": "the Laya row's impact text, column 2",
+        "note": "The +22px is entirely the impact column. The contribution column did not move even though the Laya cell gained six links, because the <br/> splits it into two lines and neither line is the widest. Adding individual PR links to the aggregate rows instead was measured separately and also cost +22px, which is why those rows stay aggregate."
+      },
+      "how_i_contribute": { "overflow": 0, "baseline": "identical" },
+      "active_tracks": { "overflow": 0, "baseline": "identical" }
+    },
+    "container_390": {
+      "constellation": { "overflow": 0, "iconOffsetSpread": [0, 0] },
+      "featured_cards": { "overflow": 0 },
+      "evidence_table": { "clientWidth": 358, "scrollWidth": 384, "overflow": 23 }
+    },
+    "container_1012": {
+      "constellation": { "clientWidth": 290, "scrollWidth": 290, "overflow": 0, "iconOffsetSpread": [0, 0], "colWidths": [[74, 74, 74, 74], [74, 74, 74, 74]] }
+    },
+    "live_constellation_at_1440": {
+      "row_1_icon_tops": 382,
+      "row_2_icon_tops": 482,
+      "spread_px": 0,
+      "row_1": ["Laya 750/40", "Qwen Paw 818/40", "Eval Scope 886/42", "FunASR 955/40"],
+      "row_2": ["Open Claw 750/40", "Dify 818/40", "Cherry 887/40", "RAG Flow 956/38"],
+      "note": "Every icon in a row starts at the same y, so the baselines line up on the real renderer, not only in the simulation. Anchor heights read 61px for two-line labels against 40px for one, which is the <br/><br/> reserved-line behaviour working as designed."
+    }
+  },
+  "_renderer_constraints_reconfirmed": [
+    "GitHub's sanitizer strips the inline style attribute. Verified on the live rendered profile after the push: the constellation table has no table-layout in the served HTML, although the source still carries it. This is why Build-ProfileRenderPreview.py strips style before measuring, and why an unstripped local render reports fits the live page never had.",
+    "The four reserved label lines are load-bearing. Equal label heights are the only thing that aligns the icons, because display:block tables are content-height-driven and a height attribute can only act as a minimum.",
+    "A Markdown table's column width is the max max-content over its rows, so a single wide cell grows the whole table regardless of how short the other rows are. This is what made the Laya impact text, not the Laya link list, the thing that moved the evidence table by 22px.",
+    "A table wider than its container does not break the page; it scrolls inside the overflow box GitHub puts on it. The evidence table is inside a collapsed <details> anyway, so its overflow is not visible on load."
+  ],
+  "_decisions": {
+    "constellation_untouched": "The 4x2 eight-cell grid is byte-identical to v2.5 and was verified as such before the commit. A wider 3x5 grid covering all 15 external upstreams was built and measured during this release, then discarded on instruction: the eight curated marks are the design, and the extra projects are represented by the counts and the footprint line instead.",
+    "aggregate_rows_stay_aggregate": "Pinned by Test-ProfileV26Counts.ps1 and covered by the aggregate-row-given-individual-links mutation.",
+    "laya_cell_keeps_its_split": "The <br/> is required, not cosmetic. Without it the eleven links sit on one line and the cell's max-content width is the widest thing in the table.",
+    "accepted_cost": "The evidence table scrolls 22px further at a 320px container. The alternative was cutting the review-work description, which is the content this release exists to add, so the width was accepted and pinned rather than paid for in copy."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_comment": "WebBridge evaluate payload used to measure the YU-131 featured collaborations card layout on the live GitHub renderer. Reusable via: curl -s -X POST http://127.0.0.1:10086/command -H 'Content-Type: application/json' --data-binary @<this file>. Pair with a cdp Emulation.setDeviceMetricsOverride request for the target viewport, and clear it with Emulation.clearDeviceMetricsOverride when done.",
+  "session": "yu131-edge",
+  "action": "evaluate",
+  "args": {
+    "code": "(()=>{const a=document.querySelector('article.markdown-body');const h2=Array.from(a.querySelectorAll('h2')).find(h=>h.innerText.trim()==='Featured collaborations');const det=a.querySelector('details');const all=Array.from(a.querySelectorAll('table'));const t=all.find(x=>x.querySelectorAll('td').length===6);if(!t)return {error:'card table not found'};const wrapDiv=t.parentElement;const wrapCS=getComputedStyle(wrapDiv);const rows=Array.from(t.querySelectorAll('tr')).map(tr=>{const tds=tr.querySelectorAll('td');const textCell=tds[1];const walker=document.createTreeWalker(textCell,NodeFilter.SHOW_TEXT);const blocks=[];while(walker.nextNode()){const s=walker.currentNode.nodeValue.replace(/\\s+/g,' ').trim();if(!s)continue;const r=document.createRange();r.selectNodeContents(walker.currentNode);blocks.push({text:s.slice(0,46),lines:Array.from(r.getClientRects()).length});}const iconCellCS=getComputedStyle(tds[0]);return {rowWidth:Math.round(tr.getBoundingClientRect().width),iconCell:Math.round(tds[0].getBoundingClientRect().width),textCell:Math.round(textCell.getBoundingClientRect().width),iconAlign:{align:iconCellCS.textAlign,valign:iconCellCS.verticalAlign},blocks};});return {url:location.href,viewport:{w:innerWidth},docScroll:document.documentElement.scrollWidth,articleWidth:Math.round(a.getBoundingClientRect().width),wrapper:{tag:wrapDiv.tagName,align:wrapDiv.getAttribute('align'),computedTextAlign:wrapCS.textAlign},tableClient:t.clientWidth,tableScroll:t.scrollWidth,tableOffsetLeft:Math.round(t.getBoundingClientRect().left),sectionHeight:Math.round((det.getBoundingClientRect().top+scrollY)-(h2.getBoundingClientRect().top+scrollY)),rows};})()"
+  },
+  "_measured_on": "2026-09-26, branch preview/profile-v23-yu131 at 947e19f, blob preview pane in Microsoft Edge",
+  "_measured_results": {
+    "note": "clientWidth == scrollWidth at every width means no horizontal scrolling. Baseline figures are from the v2.2 blob at profile-freeze-20260926-v2.2.",
+    "1118_desktop": { "article": 1005, "rowWidths": [661, 661, 661], "sectionHeight": 398, "worstEvidenceLines": 1, "docScroll": 1103, "horizontalScroll": false, "tableOffsetLeft": 220 },
+    "390": { "article": 324, "rowWidths": [323, 323, 323], "sectionHeight": 518, "worstEvidenceLines": 3, "docScroll": 390, "horizontalScroll": false, "baselineSectionHeight": 598, "baselineWorstColumnLines": 16, "baselineCtaLines": 2 },
+    "360": { "article": 294, "rowWidths": [293, 293, 293], "sectionHeight": 590, "worstEvidenceLines": 4, "docScroll": 360, "horizontalScroll": false },
+    "320": { "article": 254, "rowWidths": [253, 253, 253], "sectionHeight": 716, "worstEvidenceLines": 5, "docScroll": 320, "horizontalScroll": false, "baselineTableClient": 254, "baselineTableScroll": 309, "baselineSectionHeight": 628 }
+  },
+  "_renderer_constraints_confirmed_by_measurement": [
+    "GitHub's sanitizer strips the inline style attribute: getAttribute('style') is empty on the rendered table even though the source carried one.",
+    "table-layout in that stripped attribute computes to 'auto', so the source never took effect. Only the HTML width attribute survives: width=\"84\" -> computed 84px with box-sizing border-box.",
+    "GitHub applies display:block, width:max-content, max-width:100%, overflow-x:auto to markdown tables, so a source width=\"100%\" is inert and a standalone table shrinks to its own content width. Three separate tables rendered 461/662/454px on desktop, which is why the cards share one table.",
+    "CommonMark ends a raw HTML block at a blank line, so no blank line may appear inside the card table.",
+    "align and valign do survive: align=\"center\" on the wrapper computes to text-align -webkit-center, and valign=\"top\" on a cell computes to vertical-align top.",
+    "GitHub wraps each table in a <markdown-accessibility-table> custom element."
+  ]
+}
