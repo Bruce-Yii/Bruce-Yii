@@ -10,7 +10,8 @@ I work across AI open-source projects on product behavior, integration contracts
 
 <p>
   <img alt="Profile views" src="https://komarev.com/ghpvc/?username=Bruce-Yii" />
-  <img alt="Repositories" src="https://img.shields.io/badge/External_repos-14-2ea44f" />
+  <img alt="External upstream repos" src="https://img.shields.io/badge/External_repos-15-2ea44f" />
+  <img alt="Merged upstream PRs" src="https://img.shields.io/badge/Merged_upstream_PRs-61-2ea44f" />
   <img alt="Focus" src="https://img.shields.io/badge/Focus-Agent_%26_AI_Product-8A2BE2" />
 </p>
 
@@ -69,7 +70,7 @@ I work across AI open-source projects on product behavior, integration contracts
     <td valign="top">
       <b>Laya</b><br/>
       <sub>Product contracts · adoption · review</sub><br/>
-      5 merged PRs · staged adoption · cross-PR review<br/>
+      21 merged PRs · 60 PRs reviewed · staged adoption<br/>
       <a href="https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii"><b>View work →</b></a>
     </td>
   </tr>
@@ -80,7 +81,7 @@ I work across AI open-source projects on product behavior, integration contracts
     <td valign="top">
       <b>Qwen × ModelScope</b><br/>
       <sub>Agent UX · multimodal eval · speech reliability</sub><br/>
-      QwenPaw product UX · EvalScope multimodal eval · FunASR Nano timestamps<br/>
+      QwenPaw product UX · EvalScope ×3 · FunASR Nano timestamps<br/>
       <a href="https://github.com/agentscope-ai/QwenPaw/pull/7593"><b>Explore work →</b></a>
     </td>
   </tr>
@@ -94,7 +95,7 @@ I work across AI open-source projects on product behavior, integration contracts
     <td valign="top">
       <b>Agent OSS</b><br/>
       <sub>Runtime · RAG · context integrity</sub><br/>
-      OpenClaw ×4 · Dify ×3 · Cherry ×4 · RAGFlow ×4<br/>
+      OpenClaw ×5 · Dify ×4 · Cherry ×5 · RAGFlow ×4<br/>
       <a href="https://github.com/search?q=author%3ABruce-Yii+is%3Apr+is%3Amerged&type=pullrequests"><b>All PRs →</b></a>
     </td>
   </tr>
@@ -106,18 +107,18 @@ I work across AI open-source projects on product behavior, integration contracts
 
 | Project | Contribution | Product / user impact |
 | --- | --- | --- |
-| **Laya** | [#224](https://github.com/NandhaKishorM/laya/pull/224) · [#292](https://github.com/NandhaKishorM/laya/pull/292) · [#328](https://github.com/NandhaKishorM/laya/pull/328) · [#115](https://github.com/NandhaKishorM/laya/pull/115) · [#415](https://github.com/NandhaKishorM/laya/pull/415) | Document staged adoption, protect recent intent, correct routing semantics, clarify full-conversation contracts, and recover requests hidden by email disclaimers |
-| **QwenPaw** | [#7593](https://github.com/agentscope-ai/QwenPaw/pull/7593) | Restore direct workspace path input while preserving picker and validation behavior |
-| **EvalScope** | [#1729](https://github.com/modelscope/evalscope/pull/1729) · [#1720](https://github.com/modelscope/evalscope/pull/1720) | Real multi-image MMMU evaluation and more reliable import semantics |
+| **Laya** | [21 merged](https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+author%3ABruce-Yii) · [#115](https://github.com/NandhaKishorM/laya/pull/115) · [#224](https://github.com/NandhaKishorM/laya/pull/224) · [#415](https://github.com/NandhaKishorM/laya/pull/415) · [#523](https://github.com/NandhaKishorM/laya/pull/523) · [#664](https://github.com/NandhaKishorM/laya/pull/664)<br/>[60 reviewed](https://github.com/NandhaKishorM/laya/pulls?q=is%3Apr+reviewed-by%3ABruce-Yii) · [#696](https://github.com/NandhaKishorM/laya/pull/696) · [#698](https://github.com/NandhaKishorM/laya/pull/698) · [#710](https://github.com/NandhaKishorM/laya/pull/710) · [#712](https://github.com/NandhaKishorM/laya/pull/712) | Router, eval and MCP contracts plus adoption docs; review caught Python/TypeScript parity gaps, an off-by-one percentile, a wrong state-budget formula, CVE severity |
+| **QwenPaw** | [#7593](https://github.com/agentscope-ai/QwenPaw/pull/7593) · [5 open](https://github.com/agentscope-ai/QwenPaw/pulls?q=is%3Apr+author%3ABruce-Yii) | Restore direct workspace path input while preserving picker and validation behavior |
+| **EvalScope** | [3 merged](https://github.com/modelscope/evalscope/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged) · [#1720](https://github.com/modelscope/evalscope/pull/1720) · [#1729](https://github.com/modelscope/evalscope/pull/1729) · [#1768](https://github.com/modelscope/evalscope/pull/1768) | Real multi-image MMMU evaluation and more reliable import semantics |
 | **FunASR** | [#3703](https://github.com/modelscope/FunASR/pull/3703) | Correct Fun-ASR-Nano punctuation timestamps across VAD merges with real-tokenizer coverage |
-| **OpenClaw** | [4 merged PRs](https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged) | Gateway repair, CLI behavior, local inference, and setup reliability |
-| **Dify** | [3 merged PRs](https://github.com/langgenius/dify/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged) | RAG ingestion fidelity, moderation behavior, and annotation CSV integrity |
-| **Cherry Studio** | [4 merged PRs](https://github.com/CherryHQ/cherry-studio/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged) | Runtime proxy behavior, Gemini tool schemas, binary-manager state, and rich Excel clipboard interoperability |
+| **OpenClaw** | [5 merged PRs](https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged) | Gateway repair, CLI behavior, local inference, and setup reliability |
+| **Dify** | [4 merged PRs](https://github.com/langgenius/dify/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged) | RAG ingestion fidelity, moderation behavior, and annotation CSV integrity |
+| **Cherry Studio** | [5 merged PRs](https://github.com/CherryHQ/cherry-studio/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged) | Runtime proxy behavior, Gemini tool schemas, binary-manager state, and rich Excel clipboard interoperability |
 | **RAGFlow** | [4 merged PRs](https://github.com/infiniflow/ragflow/pulls?q=is%3Apr+author%3ABruce-Yii+is%3Amerged) | Agent message semantics plus retrieval and model-utility coverage |
 
 </details>
 
-> **Current footprint:** contributions across 14 external upstream repositories.
+> **Current footprint:** 61 merged PRs across 15 external upstream repositories, plus 60 PRs reviewed on Laya alone.
 > I care about useful upstream changes and maintainer trust more than PR volume.
 
 ## How I contribute
