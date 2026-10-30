@@ -15,6 +15,13 @@ I work across AI open-source projects on product behavior, integration contracts
   <img alt="Focus" src="https://img.shields.io/badge/Focus-Agent_%26_AI_Product-8A2BE2" />
 </p>
 
+<p>
+  <a href="https://ghfind.com/u/bruce-yii?ref=badge"><picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://ghfind.com/api/card/mini/bruce-yii?theme=dark" />
+    <img src="https://ghfind.com/api/card/mini/bruce-yii?theme=light" alt="ghfind score card: Lv.84, top 9.6%" width="440" />
+  </picture></a>
+</p>
+
 </div>
 
 <!-- holographic animations: demos from LAWTED/holographic-sticker -->
